@@ -3,7 +3,7 @@
 > 오늘 배운 내용 요약 <br />
 > 요약
 
-[실습 파일]
+[실습 파일] <br />
 hello.js : 출력 메소드 실습 <br />
 hello.html : html과 console
 
