@@ -3,8 +3,8 @@
 ## [03월 23일]
 > 59페이지~
 
-> 실습파일
-hello.html
+> 실습파일 <br>
+hello.html <br>
 hello.js
 
 - 문자 선택 연산자
@@ -62,6 +62,8 @@ hello.js
 - conse : 상수(constant)를 만드는 키워드.
 - 변하지 않을 대상에 상수를 적용.
 
+***
+
 [3장. 조건문]
 1. if 조건문
 - 기본 형태
@@ -86,8 +88,8 @@ hello.js
 > 오늘 배운 내용 요약 <br />
 요약
 
-> 실습 파일 
-hello.js : 출력 메소드 실습
+> 실습 파일 <br>
+hello.js : 출력 메소드 실습 <br>
 hello.html : html과 console
 
 [1장. 자바스크립트 첫걸음]
