@@ -5,7 +5,8 @@
 > 실습파일 <br>
 hello.html <br>
 hello.js <br>
-code3-18.js
+code3-18.js <br>
+for_test.js
 
 4. if else if 조건문
 - 중복되지 않는 세 가지 이상의 조건을 구분 시 사용.
