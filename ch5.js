@@ -114,6 +114,41 @@
 //     console.log("1초지남!");
 // }, 1000);
 
-setInterval(() => {
-    console.log("1초 지남!")
-}, 1000);
+// setInterval(() => {
+//     console.log("1초 지남!")
+// }, 1000);
+
+// let foo = setInterval( () => {
+//     console.log("출력합니다.");
+// }, 1000);
+
+// setTimeout(function() {
+//     clearInterval(foo);
+// }, 3000);
+
+// let bar;
+// bar = 10;
+// bar = 20;
+
+// console.log(bar);
+
+// 코드 5-19
+// let foo;
+// foo = function(){
+//     console.log("첫번째 함수");
+// }
+// foo = () => {
+//     console.log("두번째 함수");
+// }
+
+// foo();
+
+// 코드 5-20
+foo = function (){
+    console.log("first");
+}
+function foo(){
+    console.log("second");
+}
+
+foo();
