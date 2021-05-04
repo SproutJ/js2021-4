@@ -1,5 +1,65 @@
 # 최주선 [202030135]
 
+## [05월 04일]
+>실습파일 <br>
+ch7.js
+
+4. 생성자 함수와 프로토타입
+- 프로토타입: 생성자 함수로 만든 객체는 프로토타입 공간에 메소드를 지정해서 모든 객체가 공유하도록 함, 해당 함수를 생성자 함수로 사용했을 때만 의미가 있다.
+
+5. 참고
+- null의 값과 자료형: console.log()와 typeof()를 이용해서 알아보면 null과 object가 출력된다.
+
+[7장. 표준 내장 객체]
+1. 기본 자료형과 객체 자료형의 차이
+- 통합 개발 환경에서 '자동 완성 기능'
+- 기본 자료형은 객체가 아니므로 속성과 메소드 추가 불가능.
+```
+let num = 273;
+num method = function(){
+    return 'Num Method';
+};
+console.log(num.method()); // 이 코드를 실행하면 오류가 난다.
+```
+
+2. Number 객체
+- 자바스크립트에서 숫자 표현 시 사용.
+- 메소드: toExponential(), toFlexed(), toPrecision()
+- Number 생성자 함수의 속성: MAX_VALUE, MIN_VALUE, NaN, POSITIVE_INFINITY, NEGATIVE_INFINITY
+
+3. String 객체
+- String 객체의 속성: length
+- String 객체의 메소드는 여러 개인데, 알아두면 여러모로 편리하다.
+
+- toUpperCase(): 문자열을 대문자로 바꾸어 리턴.
+```
+let foo = 'abcdef';
+
+foo.toUpperCase(); // 잘못된 String 객체의 메소드 사용.
+console.log(foo); // 자기 자신을 변경하지 않고 리턴하는 것뿐이므로 소문자 상태로 출력된다.
+
+foo = foo.toUpperCase(); // 올바른 String 객체의 메소드 사용
+console.log(foo);
+```
+- indexOf(): 특정 문자열이 있는지 확인, 위치 리턴. 문자열이 포함되어 씨지 않을 때는 -1 리턴.
+```
+let foo = "안녕하세요. 좋은 날씨입니다.";
+
+if(foo.indexOf('아침') >= 0) {
+    console.log('좋은 아침입니다.');
+}
+else {
+    console.log('안녕히 주무세요.');
+}
+```
+- split(): 특정한 기호를 기반으로 문자열을 분해함.
+```
+let string = '감자,고구마,바나나,사과';
+
+let array = string.split(',');
+console.log(array);
+```
+
 ## [04월 27일]
 >실습파일 <br>
 ch5.js
@@ -26,9 +86,7 @@ ch6.js
         string: 'abcABC',
         boolean: true,
         array: [52, 273, 103, 32],
-        method: function () {
-
-        }
+        method: function () {}
     };
 
 4. 생성자 함수와 프로토타입
@@ -49,9 +107,12 @@ ch5.js
 - 선언적 함수
     - 이름 붙여서 함수 생성
 - 화살표 함수
-    - 사용 예 : let foo = () =>{
-                    console.log("신나는 하루");
-                }
+    - 사용 예 :
+        ```
+        let foo = () =>{
+             console.log("신나는 하루");
+        }
+        ```
 
 2. 함수의 기본 형태
     function <함수명> (매개변수) {
