@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="node_modules\jquery\dist\jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+           // 0부터 255까지 반복문을 돌리고
+           for(let i = 0;i<256;i++){
+               // div 태그에 스타일을 적용해 body 태그에 추가.
+               $('<div></div>').css({
+                   height: 2,
+                   background: 'rgba(' + i + ',' + i + ',' + i + ')'
+               }).appendTo('body');
+           }
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>
